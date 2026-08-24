@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="16dp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -25,29 +26,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="digite sua  altura" />
+            android:text="digite sua altura" />
 
         <EditText
             android:id="@+id/etaltura"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="numberDecimal" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="seu imc e:" />
+            android:text="seu imc e:" 
+            android:layout_marginTop="16dp" />
 
         <TextView
             android:id="@+id/tvresul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="situação:" 
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvsituacao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -55,6 +69,8 @@
             android:id="@+id/btcalc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="calcular" />
+            android:text="calcular"
+            android:layout_marginTop="16dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
